@@ -1,0 +1,114 @@
+<!-- form1.html -->
+
+
+<form class="form-horizontal" data-ng-app="myDirectives">
+<fieldset>
+
+<!-- Form Name -->
+
+
+<!-- Select Basic -->
+<div class="form-group" data-ng-controller="yearsCrtl">
+  <label class="col-md-4 control-label" for="years">Year</label>
+  <div class="col-md-8">
+    <select id="years" name="years" class="form-control">
+<!-- ng-repeat will go here -->
+      <option value="">2015</option>
+      <option value="">2014</option>
+      <option value="">2013</option>
+      <option value="">2012</option>
+      <option value="">2011</option>
+      <option value="">2010</option>
+      <option value="">2009</option>
+      <option value="">2008</option>
+      <option value="">2007</option>
+      <option value="">2006</option>
+      <option value="">2005</option>
+      <option value="">2004</option>
+      <option value="">2003</option>
+      <option value="">2002</option>
+      <option value="">2001</option>
+      <option value="">2000</option>
+    </select>
+    </select>
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="mile">Mileage</label>  
+  <div class="col-md-8">
+  <input id="mile" name="mile" type="text" placeholder="Enter miles (ex. 20000)" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="make">Make</label>
+  <div class="col-md-8">
+    <select id="make" name="make" class="form-control">
+      <option value="1">Acura</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="model">Model</label>  
+  <div class="col-md-8">
+  <input id="model" name="model" type="text" placeholder="Enter model (ex. Corvette)" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="engine">Cylinders</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="engine-0">
+      <input type="radio" name="engine" id="engine-0" value="4" checked="checked">
+      4 Cylinder
+    </label>
+  </div>
+  <div class="radio">
+    <label for="engine-1">
+      <input type="radio" name="engine" id="engine-1" value="6">
+      6 Cylinder
+    </label>
+  </div>
+  <div class="radio">
+    <label for="engine-2">
+      <input type="radio" name="engine" id="engine-2" value="8">
+      8 Cylinder
+    </label>
+  </div>
+  <div class="radio">
+    <label for="engine-3">
+      <input type="radio" name="engine" id="engine-3" value="10">
+      10 Cylinder
+    </label>
+  </div>
+  <div class="radio">
+    <label for="engine-4">
+      <input type="radio" name="engine" id="engine-4" value="12">
+      12 Cylinder
+    </label>
+  </div>
+  <div class="radio">
+    <label for="engine-5">
+      <input type="radio" name="engine" id="engine-5" value="16">
+      16 Cylinder
+    </label>
+  </div>
+  </div>
+</div>
+<ul data-ng-controller="yearsCrtl">
+  <li data-ng-repeat="vyear in vyears">{{vyear.yearC}}</li>
+</ul>
+
+</fieldset>
+</form>
