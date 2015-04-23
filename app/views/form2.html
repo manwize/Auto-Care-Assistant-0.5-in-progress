@@ -1,3 +1,57 @@
 <!-- form2.html -->
 
-<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-floppy-save"></span> Save Profile</a>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>vehicle</legend>
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="services">Services</label>
+  <div class="col-md-8">
+    <select id="services" name="services" class="form-control" multiple="multiple">
+      <option value="1">Select service /or/ Services</option>
+      <option value="2">Oil Change</option>
+      <option value="">Tire rotation</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dates">Date</label>  
+  <div class="col-md-8">
+  <input id="dates" name="dates" type="text" placeholder="Enter date " class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="warranty">Warranty</label>  
+  <div class="col-md-8">
+  <input id="warranty" name="warranty" type="text" placeholder="Enter warranty " class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="notes">Notes</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="notes" name="notes"></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="save"></label>
+  <div class="col-md-4">
+    <button id="save" name="save" class="btn btn-success"><span class="glyphicon glyphicon-floppy-save"></span> <span></span>Save Profile</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
